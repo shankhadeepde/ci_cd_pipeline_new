@@ -36,7 +36,7 @@ def test_encode_categorical(sample_data):
 
     df_encoded = encode_categorical(sample_data, categorical_columns)
 
-    # Check if all categorical columns are encoded
+    # Check if all categorical columns are encoded correctly
     for col in categorical_columns:
         assert np.issubdtype(df_encoded[col].dtype, np.number)
 
